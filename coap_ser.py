@@ -68,7 +68,7 @@ async def main():
     # await: 생성한 Future가 완료될 때까지 현재 코루틴을 무한정 대기
     # 코루틴: 중단했다가 다시 이어 실행할 수 있는 함수
     # Future: 비동기 작업의 결과를 나타내는 객체
-    await asyncio.get_running_loop().create_future()
+    await asyncio.get_running_loop().create_future() # get_running_loop(): 현재 실행 중인 이벤트 루프 반환
 
 if __name__ == "__main__":
     # 비동기 루프 실행
